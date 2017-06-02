@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Crossword General</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lobster" rel="stylesheet">  
+	</head>
+
+	<body>
+		<p class="title">Crossword General</p>
+		 <div class="container-cw">
+        	<form>
+				<div class="cw-row-1"></div>
+				<div class="cw-row-2"></div>
+				<div class="cw-row-3"></div>
+				<div class="cw-row-3"></div>
+				<div class="cw-row-5"></div>
+				<div class="cw-row-6"></div>
+				<div class="cw-row-7"></div>
+				<div class="cw-row-8"></div>
+				<div class="cw-row-9"></div>
+				<div class="cw-row-10"></div>
+				<div class="cw-row-11"></div>
+				<div class="cw-row-12"></div>
+				<div class="cw-row-13"></div>
+				<div class="cw-row-14"></div>
+				<div class="cw-row-15"></div>
+        	</form>
+	    </div>
+	    <div class="container-content">
+	    	<div class="text"><button type="submit" id="submit" class="cw feedback-btn">Feedback</button>
+	    		<div class="feedback-panel">Have you tried enough? want to give up! know the answers? click <br><button type="submit" id="auto-submit" class="cw">Auto-Complete</button></div>
+	    	</div>
+
+	    	<div class="cw-clues">
+	    		<dl>
+	    			<h3>Notes:</h3>
+	    			<dd>1. Enter only lower-case or upper-case letters,</dd>
+	    			<dd>2. If the answer is correct, respective across or down answer will go 'green' else 'red'.</dd>
+	    		</dl>
+	    		<dl class="cw-clues-across">
+	    			<h3>Across</h3>
+	    			<dd id="clue2"></dd>
+	    			<dd id="clue3"></dd>
+	    			<dd id="clue7a"></dd>
+	    			<dd id="clue8"></dd>
+	    			<dd id="clue9"></dd>
+	    			<dd id="clue10"></dd>
+	    			<dd id="clue11"></dd>
+	    		</dl>
+	    		<dl class="cw-clues-down">
+	    			<h3>Down</h3>
+	    			<dd id="clue1"></dd>
+	    			<dd id="clue4"></dd>
+	    			<dd id="clue5"></dd>
+	    			<dd id="clue6"></dd>
+	    			<dd id="clue7d"></dd>
+	    		</dl>
+	    	</div>
+	    </div>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>
