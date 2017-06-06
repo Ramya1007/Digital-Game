@@ -18,6 +18,7 @@ body {
 .cw-row-1,
 .cw-row-2,
 .cw-row-3,
+.cw-row-4,
 .cw-row-5,
 .cw-row-6,
 .cw-row-7,
@@ -112,4 +113,110 @@ button.cross-word:hover {
 
 .wroMatch {
 	border: 1px #d40202 solid;
+}
+
+.auto-fill-style {
+	/*background: #56ef56;*/
+	border: 1px dashed #000;
+}
+
+/* Screen size with mob devices 375px:; */
+
+@media screen and (max-width: 375px) {
+
+.container-cw {
+    border: 1px solid #000;
+    width: 330px;
+    margin: 0 auto;
+    box-shadow: 2px 5px 5px #464646;
+}
+
+.container-content {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.cw-row-1,
+.cw-row-2,
+.cw-row-3,
+.cw-row-4,
+.cw-row-5,
+.cw-row-6,
+.cw-row-7,
+.cw-row-8,
+.cw-row-9,
+.cw-row-10,
+.cw-row-11,
+.cw-row-12,
+.cw-row-13,
+.cw-row-14,
+.cw-row-15 {
+	display: grid;
+	grid-template: repeat(15, 6.665%) / repeat(15, 6.665%);
+}
+
+.cw-grayed { background-color: #b0b0b0; }
+
+button.feedback-btn { cursor: pointer; }
+
+.feedback-panel { display: none; }
+
+.feedback-panel { padding-top: 15px; }
+
+input::placeholder {
+	font-size: 13px;
+	padding-top: 5px;
+	padding-right: 15px;
+}
+
+.row-boxes {
+	border: 1px solid #000000;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: verdana, tahoma;	
+}
+
+.title {
+	margin: 2% auto;
+	text-shadow: 2px 2px #ccc;
+	font-family: 'Bree Serif', Lobster;
+	font-size: 27px;
+	padding: 10px;
+}
+
+.text { padding: 20px; margin-left: 0%; }
+
+button.cw {
+	border: 1px solid #7a7a7a;
+	padding: 7px 10px;
+	margin-top: 15px;
+	font-family: tahoma, verdana; 
+	font-weight: bold;
+	font-size: 16px;
+	border-radius: 4px;
+	background-color: #b0b0b0;
+	cursor: pointer;
+}
+
+button.cross-word:hover { color: #fff; }
+
+.cw-clues { padding: 2% 6%; }
+
+.cw-clues .cw-clues-across dd,
+.cw-clues .cw-clues-down dd {
+	display: list-item;
+	list-style-type: square;
+	font-size: 15px;
+	font-family: tahoma, verdana
+}
+
+/*jQuery classes*/
+.corMatch { border: 1px #297500 solid; }
+
+.wroMatch { border: 1px #d40202 solid; }
+
+.auto-fill-style { border: 1px dashed #000; }
+
 }
